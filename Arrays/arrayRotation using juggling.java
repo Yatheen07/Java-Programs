@@ -15,10 +15,8 @@ class Solution{
         int j,k,temp,n=ar.length,gcd = getGcd(ar.length,r);
 
         for(int i=0;i<gcd;i++){
-
             temp = ar[i];
             j=i;
-
             while (true){
                 k=j+r;
                 if(k>=n) k=k-n;
