@@ -6,9 +6,8 @@ class Solution{
   private static Stack<Character> stack;
   private static boolean isBalanced(String input){
      stack = new Stack<Character>();
-
      char headChar = ' ';
-
+     
      for(char ch : input.toCharArray()){
        if(ch == '{' || ch == '(' || ch == '[' ) stack.push(ch);
 
@@ -29,10 +28,9 @@ class Solution{
            }
          }
        }
-       
+
      }
      if(!stack.isEmpty()) return false;
-
      return true;
   }
 
