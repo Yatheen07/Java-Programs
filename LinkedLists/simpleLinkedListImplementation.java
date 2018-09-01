@@ -15,9 +15,6 @@ class Solution{
     }
 
     System.out.println(list);
-
-
-
   }
 
 }
